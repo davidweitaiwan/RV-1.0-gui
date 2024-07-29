@@ -51,6 +51,7 @@ qt5_wrap_cpp(header_SRC
     src/image_display/image_form.h
 
     src/safety/safety.h
+    src/data_server_new_recod/new_dataserver.h
 
     include/node/gui_node.h
 )
@@ -67,6 +68,7 @@ qt5_wrap_ui(UIS_HDRS
   src/install_shell/install_process/install_process.ui
   src/install_shell/install_common/install_common.ui
   src/safety/safety.ui
+  src/data_server_new_recod/new_dataserver.ui
 
 
 )
@@ -84,6 +86,7 @@ add_executable(ros2_gui
 
     src/install_shell/install_common/install_common.cpp
 
+    src/data_server_new_recod/new_dataserver.cpp
     src/mainwindow.cpp
     src/node/gui_node.cpp
     src/sensor_form/sensor_form.cpp

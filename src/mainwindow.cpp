@@ -85,6 +85,8 @@ void MainWindow::on_SensorPushButton_clicked(){
 }
 void MainWindow::on_data_server_record_puchButton_clicked(){
     the_data_server_record->show();
+    the_new_dataserver ->show();
+
 }
 void MainWindow::on_install_shell_PushButton_clicked(){
     the_install_shell->show();

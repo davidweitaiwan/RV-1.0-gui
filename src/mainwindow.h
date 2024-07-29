@@ -10,6 +10,7 @@
 #include "safety/safety.h"
 #include <rclcpp/rclcpp.hpp>
 
+#include "data_server_new_recod/new_dataserver.h"
 /** cocobird231*/
 #include <string>
 
@@ -40,6 +41,8 @@ private:
     install_shell *the_install_shell = new install_shell;
     data_server_record *the_data_server_record =new data_server_record;
     safety *the_safety ;
+
+    new_dataserver *the_new_dataserver = new new_dataserver;
 
     std::shared_ptr<rclcpp::Node> name_node;
     QTimer timmer,device_timer;

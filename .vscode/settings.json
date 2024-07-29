@@ -83,7 +83,13 @@
         "qtnetwork": "cpp",
         "qjsonvalue": "cpp",
         "qjsonobject": "cpp",
-        "qfile": "cpp"
+        "qfile": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "unordered_set": "cpp",
+        "numbers": "cpp",
+        "semaphore": "cpp",
+        "stop_token": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "cmake.configureOnOpen": false
