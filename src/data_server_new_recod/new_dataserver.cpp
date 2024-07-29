@@ -14,7 +14,7 @@ new_dataserver::new_dataserver(QWidget *parent) :
     ui(new Ui::new_dataserver)
 {
     ui->setupUi(this);
-
+    this->setWindowTitle("Data Server 3 Record");
     control = std::make_shared<DataServerControlNode>("gui_new_data_server_0_node", "/V0/dataserver_0");
     connect(ui->pushButton, &QPushButton::clicked, this, &new_dataserver::on_click_requestDataServer);
 }

@@ -7,7 +7,7 @@ data_server_record::data_server_record(QWidget *parent) :
     ui(new Ui::data_server_record)
 {
     ui->setupUi(this);
-
+    this->setWindowTitle("Data Server 2 Record");
     this->data_server_node_ = std::make_shared<data_server_node>("gui_data_server_node");
     this->data_server_node_->get_parameter("samplingStep_ms", this->samplingStep_ms);
     this->data_server_node_->get_parameter("autoSaveTime_s", this->samplingStep_ms);

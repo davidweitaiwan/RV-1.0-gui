@@ -215,7 +215,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>server_scan_timer_status</string>
+    <string>server_action</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_5">

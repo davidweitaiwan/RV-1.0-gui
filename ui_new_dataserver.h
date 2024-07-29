@@ -154,7 +154,7 @@ public:
 
         pushButton->setText(QCoreApplication::translate("new_dataserver", "send", nullptr));
         label_3->setText(QCoreApplication::translate("new_dataserver", "server_sample_timer_status", nullptr));
-        label_9->setText(QCoreApplication::translate("new_dataserver", "server_scan_timer_status", nullptr));
+        label_9->setText(QCoreApplication::translate("new_dataserver", "server_action", nullptr));
         label_5->setText(QCoreApplication::translate("new_dataserver", "server_dump_timer_status", nullptr));
         comboBox_2->setItemText(0, QCoreApplication::translate("new_dataserver", "TIMER_STATUS_NONE", nullptr));
         comboBox_2->setItemText(1, QCoreApplication::translate("new_dataserver", "TIMER_STATUS_STOP", nullptr));

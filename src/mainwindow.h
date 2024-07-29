@@ -10,6 +10,8 @@
 #include "safety/safety.h"
 #include <rclcpp/rclcpp.hpp>
 
+#include"control_server/control_server.h"
+
 #include "data_server_new_recod/new_dataserver.h"
 /** cocobird231*/
 #include <string>
@@ -33,6 +35,7 @@ private slots:
     void on_install_shell_PushButton_clicked();
     void on_image_display_PushButton_clicked();
     void on_safety_PushButton_clicked();
+    void on_control_server_PushButton_clicked();
 
 private:
     Ui::MainWindow *ui;

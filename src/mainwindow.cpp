@@ -18,6 +18,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->pushButton_3, &QPushButton::clicked, this, &MainWindow::on_install_shell_PushButton_clicked);
     connect(ui->pushButton_6, &QPushButton::clicked, this, &MainWindow::on_image_display_PushButton_clicked);
     connect(ui->pushButton_7, &QPushButton::clicked, this, &MainWindow::on_safety_PushButton_clicked);
+    connect(ui->pushButton_2, &QPushButton::clicked, this, &MainWindow::on_control_server_PushButton_clicked);
     name_node =rclcpp::Node::make_shared("get_the_name");
     QObject::connect(&timmer, &QTimer::timeout,this, &MainWindow::refresh_topic_name_list);
     /** cocobird231*/
@@ -99,4 +100,10 @@ void MainWindow::on_image_display_PushButton_clicked(){
 void MainWindow:: on_safety_PushButton_clicked(){
     the_safety = new safety;
     the_safety->show();
+}
+
+void MainWindow::on_control_server_PushButton_clicked()
+{
+    control_server *the_control_server = new control_server;
+    the_control_server->show();
 }

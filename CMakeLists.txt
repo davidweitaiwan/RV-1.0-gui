@@ -52,7 +52,7 @@ qt5_wrap_cpp(header_SRC
 
     src/safety/safety.h
     src/data_server_new_recod/new_dataserver.h
-
+    src/control_server/control_server.h
     include/node/gui_node.h
 )
 qt5_wrap_ui(UIS_HDRS 
@@ -69,7 +69,7 @@ qt5_wrap_ui(UIS_HDRS
   src/install_shell/install_common/install_common.ui
   src/safety/safety.ui
   src/data_server_new_recod/new_dataserver.ui
-
+  src/control_server/control_server.ui
 
 )
 
@@ -91,7 +91,7 @@ add_executable(ros2_gui
     src/node/gui_node.cpp
     src/sensor_form/sensor_form.cpp
     src/safety/safety.cpp
-
+    src/control_server/control_server.cpp
     ${header_SRC}
     ${SRC}
     ${UIS_HDRS}
