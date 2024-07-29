@@ -12,7 +12,7 @@ control_server::control_server(QWidget *parent) :
     ui(new Ui::control_server)
 {
     ui->setupUi(this);
-    tthis->setWindowTitle("Control Server");
+    this->setWindowTitle("Control Server");
     controlInfoNode = std::make_shared<ControllerInfoNode>("gui_controller_info_node", "/V0/controlserver_0_ControllerInfoReq");
     controlServerSettingNode = std::make_shared<ControlServerSettingNode>("gui_control_server_setting_node", "/V0/controlserver_0");
     connect(ui->pushButton, &QPushButton::clicked, this, &control_server::on_controllerInfo_pushButton_clicked);
