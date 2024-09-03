@@ -94,15 +94,15 @@ void install_process::depoly(std::string user_name,std::string Password,std::str
         depoly_string.append("sudo rm -rf ros2_docker");
 
         if(pack_name =="py_chassis"){
-        depoly_string.append("curl -fsSL ftp://61.220.23.239/rv-11/get-chassis-install.sh | bash");
+        depoly_string.append("curl -fsSL ftp://61.220.23.239/rv-12/get-chassis-install.sh | bash");
         }else{
-        depoly_string.append("curl -fsSL ftp://61.220.23.239/rv-11/get-rpi-sensors-install.sh | bash");
+        depoly_string.append("curl -fsSL ftp://61.220.23.239/rv-12/get-rpi-sensors-install.sh | bash");
         }
     }
     if(device =="jetson"){
         depoly_string.append("./jetson_sensors/install.sh -rm");
         depoly_string.append("echo "+QString::fromStdString(Password) +" | sudo -S rm -rf jetson_sensors");
-        depoly_string.append("curl -fsSL ftp://61.220.23.239/rv-11/get-jetson-sensors-install.sh | bash");
+        depoly_string.append("curl -fsSL ftp://61.220.23.239/rv-12/get-jetson-sensors-install.sh | bash");
     }
 
 
