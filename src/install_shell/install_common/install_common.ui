@@ -13,19 +13,6 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>150</y>
-     <width>121</width>
-     <height>17</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Message Type:</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
@@ -47,136 +34,6 @@
      <width>501</width>
      <height>25</height>
     </rect>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="checkBox_4">
-   <property name="geometry">
-    <rect>
-     <x>440</x>
-     <y>150</y>
-     <width>121</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>GroundDetect</string>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="checkBox">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>150</y>
-     <width>92</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Distance</string>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="checkBox_2">
-   <property name="geometry">
-    <rect>
-     <x>240</x>
-     <y>150</y>
-     <width>92</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Environment</string>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="checkBox_5">
-   <property name="geometry">
-    <rect>
-     <x>570</x>
-     <y>150</y>
-     <width>92</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Image</string>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="checkBox_3">
-   <property name="geometry">
-    <rect>
-     <x>340</x>
-     <y>150</y>
-     <width>92</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>GPS</string>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="checkBox_10">
-   <property name="geometry">
-    <rect>
-     <x>570</x>
-     <y>180</y>
-     <width>92</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>MotorAxle</string>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="checkBox_7">
-   <property name="geometry">
-    <rect>
-     <x>240</x>
-     <y>180</y>
-     <width>121</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>MotorSteering</string>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="checkBox_8">
-   <property name="geometry">
-    <rect>
-     <x>380</x>
-     <y>180</y>
-     <width>61</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>UPS</string>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="checkBox_6">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>180</y>
-     <width>92</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>IMU</string>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="checkBox_9">
-   <property name="geometry">
-    <rect>
-     <x>440</x>
-     <y>180</y>
-     <width>111</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>WheelState</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
@@ -203,235 +60,120 @@
    </property>
    <item>
     <property name="text">
-     <string>/V0/ultrasound_2_node</string>
+     <string>/V0/gps_0</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>/V0/ultrasound_3_node</string>
+     <string>/V0/ultrasound_1</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>/V0/ultrasound_4_node</string>
+     <string>/V0/ultrasound_2</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>/V0/ultrasound_5_node</string>
+     <string>/V0/zed_0</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>/V0/ultrasound_6_node</string>
+     <string>/V0/zed_1</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>/V0/ultrasound_7_node</string>
+     <string>/V0/zed_2</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>/V0/zed_0_node</string>
+     <string>/V0/webcam_0</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>/V0/zed_1_node</string>
+     <string>/V0/webcam_1</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>/V0/zed_3_node</string>
+     <string>/V0/chassis_steering_0</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>/V0/zed_4_node</string>
+     <string>/V0/chassis_steering_1</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>/V0/zed_5_node</string>
+     <string>/V0/chassis_steering_2</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>/V0/webcam_0_node</string>
+     <string>/V0/chassis_steering_3</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>/V0/webcam_1_node</string>
+     <string>/V0/chassis_motor_0</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>/V0/webcam_2_node</string>
+     <string>/V0/chassis_motor_1</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>/V0/webcam_3_node</string>
+     <string>/V0/chassis_motor_2</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>/V0/webcam_4_node</string>
+     <string>/V0/chassis_motor_3</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>/V0/webcam_5_node</string>
+     <string>/V0/controlserver_0</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>/V0/chassis_steering_1_node</string>
+     <string>/V0/grounddetect_0</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>/V0/chassis_steering_2_node</string>
+     <string>/V0/qosserver_0</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>/V0/chassis_steering_3_node</string>
+     <string>/V0/safetyserver_0</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>/V0/chassis_steering_4_node</string>
+     <string>/V0/timesyncserver_0</string>
     </property>
    </item>
    <item>
     <property name="text">
-     <string>/V0/chassis_steering_5_node</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>/V0/chassis_steering_6_node</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>/V0/chassis_steering_7_node</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>/V0/chassis_battery_0_node</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>/V0/chassis_battery_1_node</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>/V0/chassis_battery_2_node</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>/V0/chassis_battery_3_node</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>/V0/chassis_battery_4_node</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>/V0/chassis_battery_5_node</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>/V0/chassis_battery_6_node</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>/V0/chassis_battery_7_node</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>/V0/chassis_battery_8_node</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>/V0/chassis_battery_9_node</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>/V0/controlserver_0_node</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>/V0/rfcomm_0_node</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>/V0/rfcomm_1_node</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>/V0/grounddetect_0_node</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>/V0/grounddetect_1_node</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>/V0/grounddetect_2_node</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>/V0/grounddetect_3_node</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>/V0/qosserver_0_node</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>/V0/safetyserver_0_node</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>/V0/timesyncserver_0_node</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>/V0/dataserver_0_node</string>
+     <string>/V0/dataserver_0</string>
     </property>
    </item>
   </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>670</x>
-     <y>10</y>
+     <x>660</x>
+     <y>90</y>
      <width>89</width>
      <height>25</height>
     </rect>
@@ -444,9 +186,9 @@
    <property name="geometry">
     <rect>
      <x>50</x>
-     <y>240</y>
+     <y>140</y>
      <width>631</width>
-     <height>401</height>
+     <height>501</height>
     </rect>
    </property>
   </widget>
