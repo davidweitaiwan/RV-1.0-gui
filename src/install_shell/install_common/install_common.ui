@@ -65,6 +65,16 @@
    </item>
    <item>
     <property name="text">
+     <string>/V0/sense_0</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>/V0/sense_1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
      <string>/V0/ultrasound_1</string>
     </property>
    </item>

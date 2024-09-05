@@ -652,7 +652,8 @@ void install_shell::check_ssh_device_information(std::string ip_address ,std::st
     int rc;
     int port = 22;
     char buffer[256];
-    int nbytes;
+    char buffer2[256];
+    int nbytes,nbytes2;
     int verbosity = SSH_LOG_PROTOCOL;
 
     // Open session and set options
@@ -735,8 +736,27 @@ void install_shell::check_ssh_device_information(std::string ip_address ,std::st
     install_device_infor* dialog_device_info = new install_device_infor(nullptr,QString::fromStdString(ip_address),QString::fromStdString(user_name),Device_access_url,ssh_infor_string);
     dialog_device_info->show();
     }else{
+        ssh_channel channel2 = ssh_channel_new(my_ssh_session);
+        rc = ssh_channel_open_session(channel2);
+        if (rc != SSH_OK)
+        {
+            ssh_free(my_ssh_session);
+            ssh_channel_free(channel2);
+            return ;
+        }
+        rc = ssh_channel_request_exec(channel2, "hostname");
+        nbytes2 = ssh_channel_read(channel2, buffer2, sizeof(buffer2), 0);
+        QByteArray ssh_Qbyte2;
+        QByteArray ssh_merge_qbyte2;
+        while (nbytes2 > 0)
+        {
+            ssh_Qbyte2 = QByteArray::fromRawData(buffer2,nbytes2);
+            ssh_merge_qbyte2.append(ssh_Qbyte2);
+            nbytes2 = ssh_channel_read(channel2, buffer2, sizeof(buffer2), 0);
+        }
+        QString ssh_infor_string2=ssh_merge_qbyte2;
         QMessageBox exception_ssh;
-        exception_ssh.setText("未安裝任何東西");
+        exception_ssh.setText("hostname:"+ssh_infor_string2+"\n未安裝任何東西");
         exception_ssh.exec();
     }
 
